@@ -1,3 +1,154 @@
+@media (max-width:768px){
+   
+    body, html {
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    .contenedor {
+        padding: 0 50px; /* Ajustar el padding lateral */
+    }
+
+    .header {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column; /* Cambiar a columna para mostrar los elementos uno debajo del otro */
+        align-items: center; /* Centrar horizontalmente */
+        width: 100%;
+    }
+
+    .a-img {
+        margin-bottom: 10px; /* Espacio entre el logo y el nav */
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column; /* Cambiar a columna para mostrar los enlaces uno debajo del otro */
+        align-items: center; /* Centrar horizontalmente */
+        width: 100%;
+    }
+
+    .home, .proyectos {
+        display: none; /* Ocultar los enlaces HOME y PROYECTOS */
+    }
+
+    .img-header-social {
+        display: none; /* Ocultar los iconos sociales */
+    }
+
+    .contenedor-hero {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; /* Centrar contenido verticalmente */
+    }
+
+    .hero-content {
+        margin-left: 0; /* Eliminar el margen izquierdo */
+        transform: translateY(-10%);
+        text-align: center; /* Alinear texto al centro */
+    }
+
+    .h1-hero {
+        font-size: 40px; /* Reducir tamaño del h1 */
+        margin: 0;
+    }
+
+    .h2-hero {
+        font-size: 30px; /* Reducir tamaño del h2 */
+        font-weight: lighter;
+        margin: 10px 0;
+    }
+
+    .button-contactame {
+        margin-top: 20px; /* Espacio superior para separar del contenido */
+        transform: translateY(100%);
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    .container-about{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .container-h2{
+            margin-right: 80px;
+            text-align: center;
+            justify-content: flex-end;
+            width: 100%;
+        }
+
+        .container-p-button{
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+        }
+
+        .buttonDescargar{
+            justify-content: center;
+            width: 100%;
+            align-items: center;
+        }
+    }
+
+    .contenedor-skills{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .skills-lenguajes{
+        display: none;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer-h3{
+        text-align: center;
+    }
+
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .div-img-footer{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding-top: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-social{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0 0 0;
+        padding-top: 0;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+}
+
+
+
+
+
+
 @media (max-width: 320px) {
     /* General */
     body, html {
@@ -50,76 +201,96 @@
         padding: 10px 15px; /* Smaller button */
     }
 
-    /* About */
-    .about {
-        margin: 50px 0; /* Smaller margin */
+    /* Contenedor principal */
+    .contenedor-about {
         width: 100%;
+        padding: 0 20px; /* Agregar un poco de espacio a los lados */
+    }
+
+    /* Sección "About" */
+    .about {
+        margin: 50px 0; /* Margen superior e inferior más pequeño */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centrar elementos horizontalmente */
+        text-align: center; /* Alinear texto al centro */
     }
 
     .container-about {
-        flex-direction: column;
-        align-items: center;
         width: 100%;
     }
 
     .container-h2 {
-        margin: 0 0 20px 0;
-        text-align: center;
+        margin: 0;
         width: 100%;
     }
 
     .about-h2 {
-        font-size: 24px; /* Smaller font size */
+        font-size: 24px; /* Tamaño de fuente más pequeño */
+        margin-bottom: 10px; /* Espacio inferior más pequeño */
     }
 
     .container-p-button {
         margin: 0;
-        text-align: center;
-        padding: 0 10px; /* Add padding for better alignment */
+        padding: 0; /* Eliminar el relleno lateral */
         width: 100%;
     }
 
     .about-p {
-        font-size: 16px; /* Smaller font size */
+        font-size: 16px; /* Tamaño de fuente más pequeño */
+        margin-bottom: 10px; /* Espacio inferior más pequeño */
     }
 
     .buttonDescargar {
         margin: 20px 0;
-        padding: 10px 15px; /* Smaller button */
+        padding: 10px 15px; /* Botón más pequeño */
+        display: inline-block; /* Asegurar que el botón se muestre en línea */
+        text-decoration: none; /* Eliminar subrayado */
     }
 
     /* Skills */
     .skills-container {
-        padding: 20px; /* Smaller padding */
+        padding: 20px; / Smaller padding */
         width: 100%;
     }
 
     .skills-h2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
         text-align: center;
         font-size: 24px; /* Smaller font size */
     }
-
+    
     .skills-container-focus {
         flex-direction: column;
         align-items: center;
         margin: 0;
         width: 100%;
     }
-
-    .skills-focus, .skills-lenguajes {
-        width: 100%;
-        padding: 0 10px; /* Add padding for better alignment */
+    
+    .skills-focus{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        text-align: center;
+        justify-content: center;
     }
-
+    
     .skills-p {
         font-size: 16px; /* Smaller font size */
         margin: 0; /* Remove margin */
     }
-
+    
     .s-l-p {
         height: 20px; /* Smaller bar height */
     }
-
+    
     .pp {
         font-size: 12px; /* Smaller text */
     }

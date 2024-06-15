@@ -17,9 +17,9 @@
     <header>
         <a class="a-img" href="#"><img src="img/logo.png" alt="Logo"/></a>
         <nav>
-            <a class="lista-nav" href="#">HOME</a>
+            <a class="lista-nav home" href="#">HOME</a>
             <a class="lista-nav" href="#sobremi">ACERCA DE</a>
-            <a class="lista-nav" href="#projectos">PROJECTOS</a>
+            <a class="lista-nav proyectos" href="#projectos">PROYECTOS</a>
             <a class="lista-nav" href="#contacto">CONTACTO</a>
         </nav>
         <section class="img-header-social">
@@ -29,15 +29,17 @@
         </section>
     </header>
     <main>
-        <section class="hero">
+        <section class = contenedor-hero> <section class="hero">
             <div class="hero-content">
                 <h1 class="h1-hero">Quintana Emmanuel</h1>
                 <h2 class="h2-hero">Web Developer</h2>
                 <a href="#contacto" class="button-contactame">CONTACTAME</a>
             </div>
-        </section> 
+        </section></section>
+        
 
-        <section class="about" id="sobremi">
+        <section class = "contenedor-about">
+            <section class="about" id="sobremi">
             <div class="container-about">
                 <div class="container-h2">
                     <h2 class="about-h2">Sobre mi</h2>
@@ -51,32 +53,36 @@
                 </div>
             </div>
         </section>
-  
-        <section class="skills-container">
-            <div class="skills-div">
-                <h2 class="skills-h2">Habilidades</h2>
-                <p class="skills-p">Soy un desarrollador dedicado a profundizar mis conocimientos en el desarrollo backend, mientras cultivo un creciente interés en el frontend. Mi pasión por la programación me impulsa a aprender continuamente y perfeccionar mis habilidades. Actualmente, estoy enfocado en dominar nuevas tecnologías frontend para crear experiencias de usuario más dinámicas e intuitivas.
-                </p>
-                <div class="skills-container-focus">
-                    <div class="skills-focus">
-                        <p>MI ENFOQUE</p>
-                        <hr>
-                        <p class="skills-focus-p">Diseño UX/UI</p>
-                        <p class="skills-focus-p">Diseño Responsive</p>
-                        <p class="skills-focus-p">Diseño Web</p>
-                        <p class="skills-focus-p">Diseño de Aplicaciones de Escritorio</p>
-                    </div>
-
-                    <div class="skills-lenguajes">
-                        <div class="s-l-p skills-html"><p class="pp">HTML</p><div class="barra bar-html"></div></div>
-                        <div class="s-l-p skills-css"><p class="pp">CSS</p><div class="barra bar-css"></div></div>
-                        <div class="s-l-p skills-c"><p class="pp">C#</p><div class="barra bar-c"></div></div>
-                        <div class="s-l-p skills-java"><p class="pp">Java</p><div class="barra bar-java"></div></div>
-                    </div>
-                </div>
-            </div>
         </section>
 
+        
+        <section class = "contenedor-skills">
+            <section class="skills-container">
+                <div class="skills-div">
+                    <h2 class="skills-h2">Habilidades</h2>
+                    <p class="skills-p">Soy un desarrollador dedicado a profundizar mis conocimientos en el desarrollo backend, mientras cultivo un creciente interés en el frontend. Mi pasión por la programación me impulsa a aprender continuamente y perfeccionar mis habilidades. Actualmente, estoy enfocado en dominar nuevas tecnologías frontend para crear experiencias de usuario más dinámicas e intuitivas.
+                    </p>
+                    <div class="skills-container-focus">
+                        <div class="skills-focus">
+                            <p>MI ENFOQUE</p>
+                            <hr>
+                            <p class="skills-focus-p">Diseño UX/UI</p>
+                            <p class="skills-focus-p">Diseño Responsive</p>
+                            <p class="skills-focus-p">Diseño Web</p>
+                            <p class="skills-focus-p">Diseño de Aplicaciones de Escritorio</p>
+                        </div>
+
+                        <div class="skills-lenguajes">
+                            <div class="s-l-p skills-html"><p class="pp">HTML</p><div class="barra bar-html"></div></div>
+                            <div class="s-l-p skills-css"><p class="pp">CSS</p><div class="barra bar-css"></div></div>
+                            <div class="s-l-p skills-c"><p class="pp">C#</p><div class="barra bar-c"></div></div>
+                            <div class="s-l-p skills-java"><p class="pp">Java</p><div class="barra bar-java"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        
 
         <section class="portfolio" id="projectos">
             <h2 class="portfolio-h2">Portfolio</h2>
