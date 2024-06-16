@@ -1,39 +1,47 @@
+@media (max-width:1024px){
+   
+    .contenedor{        
+     padding: 0 50px 0 50px;     
+    } 
+
+}
+
 @media (max-width:768px){
    
     body, html {
-        overflow-x: hidden; /* Prevent horizontal scrolling */
+        overflow-x: hidden; 
     }
 
     .contenedor {
-        padding: 0 50px; /* Ajustar el padding lateral */
+        padding: 0 50px; 
     }
 
     .header {
         margin: 0;
         padding: 0;
         display: flex;
-        flex-direction: column; /* Cambiar a columna para mostrar los elementos uno debajo del otro */
-        align-items: center; /* Centrar horizontalmente */
+        flex-direction: column; 
+        align-items: center; 
         width: 100%;
     }
 
     .a-img {
-        margin-bottom: 10px; /* Espacio entre el logo y el nav */
+        margin-bottom: 10px; 
     }
 
     nav {
         display: flex;
-        flex-direction: column; /* Cambiar a columna para mostrar los enlaces uno debajo del otro */
-        align-items: center; /* Centrar horizontalmente */
+        flex-direction: column; 
+        align-items: center; 
         width: 100%;
     }
 
     .home, .proyectos {
-        display: none; /* Ocultar los enlaces HOME y PROYECTOS */
+        display: none; 
     }
 
     .img-header-social {
-        display: none; /* Ocultar los iconos sociales */
+        display: none; 
     }
 
     .contenedor-hero {
@@ -41,28 +49,27 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center; /* Centrar contenido verticalmente */
+        align-items: center; 
     }
 
     .hero-content {
-        margin-left: 0; /* Eliminar el margen izquierdo */
+        margin-left: 0; 
         transform: translateY(-10%);
-        text-align: center; /* Alinear texto al centro */
-    }
+        text-align: center; 
 
     .h1-hero {
-        font-size: 40px; /* Reducir tamaño del h1 */
+        font-size: 40px; 
         margin: 0;
     }
 
     .h2-hero {
-        font-size: 30px; /* Reducir tamaño del h2 */
+        font-size: 30px; 
         font-weight: lighter;
         margin: 10px 0;
     }
 
     .button-contactame {
-        margin-top: 20px; /* Espacio superior para separar del contenido */
+        margin-top: 20px; 
         transform: translateY(100%);
         margin-left: 0;
         margin-right: 0;
@@ -70,6 +77,7 @@
     }
 
     .container-about{
+        margin: 0; 
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -82,12 +90,15 @@
         }
 
         .container-p-button{
+            margin: 0; 
             justify-content: center;
             text-align: center;
             width: 100%;
         }
 
         .buttonDescargar{
+            margin: 0; 
+            margin-top: 35px;
             justify-content: center;
             width: 100%;
             align-items: center;
@@ -144,79 +155,44 @@
     
 }
 
+@media (max-width:480px){
 
-
-
-
-
-@media (max-width: 320px) {
-    /* General */
     body, html {
-        overflow-x: hidden; /* Prevent horizontal scrolling */
+        overflow-x: hidden; 
     }
 
-    /* Header */
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .lista-nav, nav {
         display: none;
     }
 
-    .a-img {
+    .header{
+        width: 100%;
         margin: 0;
-        width: 50px; /* Smaller logo */
-    }
-
-    header {
+        padding: 0px 50%;
         display: flex;
-        align-items: center;
-        justify-content: flex-start; /* Align logo to the left */
-        padding: 10px 20px;
-    }
-
-    /* Hero */
-    .hero {
-        background-image: none;
-        background-color: #333238;
+        flex-direction: column;
         justify-content: center;
-        padding: 20px 0; /* Add padding for spacing */
-        width: 100%;
+        align-items: center;
     }
 
-    .hero-content {
-        margin: 0;
-        transform: translateY(0);
-        text-align: center;
-        width: 100%;
-    }
-
-    .h1-hero {
-        margin: 0;
-        font-size: 24px; /* Smaller font size */
-    }
-
-    .h2-hero {
-        margin: 10px 0;
-        font-size: 18px; /* Smaller font size */
-    }
-
-    .button-contactame {
-        margin: 20px 0;
-        padding: 10px 15px; /* Smaller button */
-    }
-
-    /* Contenedor principal */
     .contenedor-about {
         width: 100%;
-        padding: 0 20px; /* Agregar un poco de espacio a los lados */
+        padding: 0 20px; 
     }
 
-    /* Sección "About" */
     .about {
-        margin: 50px 0; /* Margen superior e inferior más pequeño */
+        margin: 50px 0; 
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center; /* Centrar elementos horizontalmente */
-        text-align: center; /* Alinear texto al centro */
+        align-items: center; 
+        text-align: center;
     }
 
     .container-about {
@@ -229,8 +205,134 @@
     }
 
     .about-h2 {
-        font-size: 24px; /* Tamaño de fuente más pequeño */
-        margin-bottom: 10px; /* Espacio inferior más pequeño */
+        font-size: 48px; 
+        margin-bottom: 10px; 
+    }
+
+    .container-p-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0 0 0;
+        padding: 0; 
+        width: 100%;
+    }
+
+    .about-p {
+        font-size: 16px; 
+        margin-bottom: 10px; 
+    }
+
+    .buttonDescargar {
+        margin: 20px 20px 20px 0px;
+        padding: 10px 15px; 
+        display: inline-block; 
+        text-decoration: none; 
+    }
+
+    .skills-container {
+        width: 100%;
+    }
+
+    .skills-p{
+        margin: 0;
+        text-align: center;
+        display: flex;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .portfolio-container{
+        display: flex;
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+
+}
+
+
+@media (max-width: 320px) {
+
+    body, html {
+        overflow-x: hidden; 
+    }
+
+    .lista-nav, nav {
+        display: none;
+    }
+
+    .a-img {
+        margin: 0;
+        width: 50px; 
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; 
+        padding: 10px 20px;
+    }
+
+    .hero {
+        background-image: none;
+        background-color: #333238;
+        justify-content: center;
+        padding: 20px 0; 
+        width: 100%;
+    }
+
+    .hero-content {
+        margin: 0;
+        transform: translateY(0);
+        text-align: center;
+        width: 100%;
+    }
+
+    .h1-hero {
+        margin: 0;
+        font-size: 24px; 
+    }
+
+    .h2-hero {
+        margin: 10px 0;
+        font-size: 18px; 
+    }
+
+    .button-contactame {
+        margin: 20px 0;
+        padding: 10px 15px; 
+    }
+
+    .contenedor-about {
+        width: 100%;
+        padding: 0 20px; 
+    }
+
+    .about {
+        margin: 50px 0; 
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .container-about {
+        width: 100%;
+    }
+
+    .container-h2 {
+        margin: 0;
+        width: 100%;
+    }
+
+    .about-h2 {
+        font-size: 24px; 
+        margin-bottom: 10px; 
     }
 
     .container-p-button {
@@ -238,25 +340,24 @@
         align-items: center;
         justify-content: center;
         margin: 0;
-        padding: 0; /* Eliminar el relleno lateral */
+        padding: 0; 
         width: 100%;
     }
 
     .about-p {
-        font-size: 16px; /* Tamaño de fuente más pequeño */
-        margin-bottom: 10px; /* Espacio inferior más pequeño */
+        font-size: 16px; 
+        margin-bottom: 10px; 
     }
 
     .buttonDescargar {
         margin: 20px 20px 20px 0px;
-        padding: 10px 15px; /* Botón más pequeño */
-        display: inline-block; /* Asegurar que el botón se muestre en línea */
-        text-decoration: none; /* Eliminar subrayado */
+        padding: 10px 15px; 
+        display: inline-block; 
+        text-decoration: none; 
     }
 
-    /* Skills */
     .skills-container {
-        padding: 20px; / Smaller padding */
+        padding: 20px; 
         width: 100%;
     }
 
@@ -269,7 +370,7 @@
         padding: 0;
         justify-content: center;
         text-align: center;
-        font-size: 24px; /* Smaller font size */
+        font-size: 24px; 
     }
     
     .skills-container-focus {
@@ -288,27 +389,26 @@
     }
     
     .skills-p {
-        font-size: 16px; /* Smaller font size */
-        margin: 0; /* Remove margin */
+        font-size: 16px; 
+        margin: 0; 
     }
     
     .s-l-p {
-        height: 20px; /* Smaller bar height */
+        height: 20px; 
     }
     
     .pp {
-        font-size: 12px; /* Smaller text */
+        font-size: 12px; 
     }
 
-    /* Portfolio */
     .portfolio {
-        margin: 50px 0; /* Smaller margin */
+        margin: 50px 0; 
         width: 100%;
     }
 
     .portfolio-h2 {
         text-align: center;
-        font-size: 24px; /* Smaller font size */
+        font-size: 24px; 
     }
 
     .portfolio-container {
@@ -318,11 +418,9 @@
     }
 
     .div-img {
-        max-width: 90%; /* Smaller images */
+        max-width: 90%; 
         height: auto;
     }
-
-    /* Footer */
 
     .footer{
         display: flex;
@@ -341,12 +439,12 @@
 
     .footer-h3 {
         text-align: center;
-        font-size: 18px; /* Smaller font size */
+        font-size: 18px; 
     }
 
     .button-contactame-footer {
         margin: 10px 0;
-        padding: 10px 15px; /* Smaller button */
+        padding: 10px 15px; 
     }
 
     .contenedor-footer-1, .footer-social {
@@ -354,11 +452,12 @@
     }
 
     .p-footer {
-        font-size: 14px; /* Smaller text */
+        font-size: 14px; 
     }
 
     .img-footer {
-        width: 15px; /* Smaller icons */
+        width: 15px; 
     }
 }
 
+}
