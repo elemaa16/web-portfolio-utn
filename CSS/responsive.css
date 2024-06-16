@@ -166,6 +166,8 @@
     }
 
     header {
+        display: flex;
+        align-items: center;
         justify-content: flex-start; /* Align logo to the left */
         padding: 10px 20px;
     }
@@ -232,6 +234,9 @@
     }
 
     .container-p-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin: 0;
         padding: 0; /* Eliminar el relleno lateral */
         width: 100%;
@@ -243,7 +248,7 @@
     }
 
     .buttonDescargar {
-        margin: 20px 0;
+        margin: 20px 20px 20px 0px;
         padding: 10px 15px; /* Botón más pequeño */
         display: inline-block; /* Asegurar que el botón se muestre en línea */
         text-decoration: none; /* Eliminar subrayado */
@@ -318,6 +323,15 @@
     }
 
     /* Footer */
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
     .footer-container {
         flex-direction: column;
         align-items: center;
